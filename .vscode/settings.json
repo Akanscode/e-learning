@@ -1,0 +1,7 @@
+{
+  "liveServer.settings.port": 5501,
+  "headwind.prependCustomClasses": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true
+}

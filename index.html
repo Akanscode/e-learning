@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-learing</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link href="./assets/css/tailwind.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="">
+        <div
+          id="top"
+          class="w-full flex flex-col z-50 fixed sm:relative bg-white"
+        >
+          <div class="">
+            <nav
+              id="site-menu"
+              class="px-5 flex sm:flex-row lg:max-w-screen-xl lg:justify-between mt-4 py-3 bg-white mx-auto shadow sm:shadow-md border-t-4 border-purple-900"
+            >
+              <div
+                class="w-full sm:w-auto sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center"
+              >
+                <a href="#" class="no-underline py-1"
+                  ><h1 class="font-bold text-lg tracking-widest">
+                    Learn.com
+                  </h1></a
+                >
+                <button
+                  id="menuBtn"
+                  class="hamburger block sm:hidden focus:outline-none"
+                  type="button"
+                  onclick="navToggle();"
+                >
+                  <span class="hamburger__top-bun"></span
+                  ><span class="hamburger__bottom-bun"></span>
+                </button>
+              </div>
+              <!--nav link-->
+              <div
+                id="menu"
+                class="w-full sm:w-auto sm:self-center sm:flex flex-col space-x-6 sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden"
+              >
+                <a
+                  class="text-gray-400 font-bold hover:text-gray-500 text-md no-underline sm:w-auto sm:pr-4 py-2 sm:py-1 sm:pt-2"
+                  href=""
+                  target=""
+                  >Home</a
+                >
+                <a
+                  class="text-gray-400 font-bold hover:text-gray-500 text-md no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+                  href=""
+                  >Courses</a
+                >
+                <a
+                  class="text-gray-400 font-bold hover:text-gray-500 text-md no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+                  href=""
+                  >About</a
+                >
+                <a
+                  class="text-gray-400 font-bold hover:text-gray-500 text-md no-underline sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2"
+                  href=""
+                  >Contact</a
+                >
+                <button
+                  class="bg-purple-800 w-20 px-2 py-2 text-white hover:bg-purple-900 font-light text-sm rounded-xl"
+                >
+                  Login
+                </button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Hero section-->
+    <section>
+      <div
+        class="container lg:max-w-screen-xl w-full mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      >
+        <!--hero text and image -->
+        <div
+          class="relative lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 text-center"
+        >
+          <div>
+            <div
+              class="absolute left-0 items-center justify-center md:flex md:inset-y-0"
+            >
+              <svg
+                viewBox="0 0 88 88"
+                class="w-full max-w-screen-xl md:max-w-full md:h-[42rem] text-slate-200"
+              >
+                <circle fill="currentColor" cx="44" cy="44" r="15.5"></circle>
+                <circle
+                  fill-opacity="0.2"
+                  fill="currentColor"
+                  cx="44"
+                  cy="44"
+                  r="44"
+                ></circle>
+                <circle
+                  fill-opacity="0.2"
+                  fill="currentColor"
+                  cx="44"
+                  cy="44"
+                  r="37.5"
+                ></circle>
+                <circle
+                  fill-opacity="0.3"
+                  fill="currentColor"
+                  cx="44"
+                  cy="44"
+                  r="29.5"
+                ></circle>
+                <circle
+                  fill-opacity="0.3"
+                  fill="currentColor"
+                  cx="44"
+                  cy="44"
+                  r="22.5"
+                ></circle>
+              </svg>
+            </div>
+          </div>
+          <!--hero text adn button-->
+          <div class="relative">
+            <h1
+              class="flex self-start sm:text-4xl text-3xl mb-4 font-medium text-gray-900 uppercase"
+            >
+              a new approach
+              <br class="lg:inline-block" />
+              to digital litercy
+            </h1>
+            <p class="mb-8 leading-relaxed flex self-start max-w-md">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Reprehenderit quis,aspernatur?
+            </p>
+            <div class="flex">
+              <button
+                class="inline-flex text-white bg-purple-800 hover:bg-purple-900 border-0 py-2 px-6 focus:outline-none rounded text-lg"
+              >
+                Get Started
+              </button>
+              <button class="ml-4 inline-flex focus:outline-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 text-pink-700 hover:text-pink-800"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--hero image-->
+        <div class="lg:max-w-lg lg:w-full md:w-1/2">
+          <img
+            class="object-cover object-center rounded"
+            src="https://images.unsplash.com/photo-1557425955-df376b5903c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGVhcm5pbmclMjB0b2dldGhlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+        </div>
+      </div>
+      <!--partner with section-->
+      <div
+        class="relative lg:max-w-screen-xl flex justify-around flex-row bg-white shadow-2xl mx-auto px-2 py-5 md:flex-row items-center border-r-2 border-purple-800"
+      >
+        <h2 class="text-slate-800/30 font-bold text-sm lg:text-xl uppercase">
+          udemy
+        </h2>
+        <h2 class="text-slate-800/30 font-bold text-sm lg:text-xl uppercase">
+          google
+        </h2>
+        <h2 class="text-slate-800/30 font-bold text-sm lg:text-xl uppercase">
+          facebook
+        </h2>
+        <h2 class="text-slate-800/30 font-bold text-sm lg:text-xl uppercase">
+          w3school
+        </h2>
+      </div>
+    </section>
+    <!--how it work section-->
+    <section>
+      <div class="container bg-white bg-cover min-h-screen min-w-full mx-auto">
+        <div class="mt-8 lg:mt-20 lg:max-w-screen-xl w-full lg:mx-32">
+          <div class="text-center">
+            <h2
+              class="text-2xl lg:text-2xl font-medium lg:tracking-widest font-sans capitalize"
+            >
+              how it works
+            </h2>
+            <div class="mt-2">
+              <span
+                class="inline-block w-40 h-1 rounded-full bg-purple-800"
+              ></span>
+              <span
+                class="inline-block w-3 h-1 ml-1 rounded-full bg-purple-800"
+              ></span>
+              <span
+                class="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800"
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="flex md:flex-row flex-col justify-center w-full items-center mt-10 space-y-5 lg:space-x-5 lg:max-w-screen-full lg:mx-32"
+          >
+            <div
+              class="mx-5 p-4 md:w-1/3 bg-slate-100 hover:bg-slate-300/10 skew-x-3 hover:skew-y-6 shadow-2xl rounded-3xl flex flex-col text-center items-center"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-purple-800 text-purple-500 mb-5 flex-shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="flex-grow">
+                <h2
+                  class="text-gray-900 text-lg title-font font-medium mb-3 capitalize"
+                >
+                  set your plane
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis ea assumenda fugiat officiis! Exercitationem quos
+                  ducimus qui laudantium aperiam reiciendis harum minus
+                  laboriosam saepe non.
+                </p>
+                <a class="mt-3 text-purple-500 inline-flex items-center"
+                  >Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="mx-5 p-4 md:w-1/3 bg-[#ffedd5] hover:bg-[#fed7aa] hover:skew-y-6 shadow-2xl rounded-3xl flex flex-col text-center items-center"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-800/20 text-blue-500/50 mb-5 flex-shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 2a1 1 0 00-1 1v1a1 1 0 002 0V3a1 1 0 00-1-1zM4 4h3a3 3 0 006 0h3a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm2.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm2.45 4a2.5 2.5 0 10-4.9 0h4.9zM12 9a1 1 0 100 2h3a1 1 0 100-2h-3zm-1 4a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="flex-grow">
+                <h2
+                  class="text-gray-900 text-lg title-font font-medium mb-3 capitalize"
+                >
+                  get your course
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum reiciendis nihil nam minus nobis modi! Ad, recusandae
+                  facilis? Voluptatum laborum asperiores dicta ullam incidunt
+                  facere.
+                </p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center"
+                  >Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="mx-5 p-4 md:w-1/3 bg-[#ccfbf1] hover:bg-[#99f6e4] hover:skew-y-6 shadow-2xl rounded-3xl flex flex-col text-center items-center"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-500 text-indigo-700 mb-5 flex-shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="flex-grow">
+                <h2
+                  class="text-gray-900 text-lg title-font font-medium mb-3 capitalize"
+                >
+                  get an award
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  officiis sapiente harum, ut, dignissimos unde optio totam
+                  tenetur, distinctio dolores minima nesciunt eligendi id
+                  facere?
+                </p>
+                <a class="mt-3 text-purple-500 inline-flex items-center"
+                  >Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="mx-5 p-4 md:w-1/3 bg-slate-200 hover:bg-slate-300 hover:skew-y-6 shadow-2xl rounded-3xl flex flex-col text-center items-center"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-rose-800 text-rose-500 mb-5 flex-shrink-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="flex-grow">
+                <h2
+                  class="text-gray-900 text-lg title-font font-medium mb-3 capitalize"
+                >
+                  earn a certificate
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                  in voluptates doloribus impedit eius? Atque similique, quos
+                  sunt quibusdam beatae voluptates reiciendis veritatis illum
+                  ab.
+                </p>
+                <a class="mt-3 text-purple-500 inline-flex items-center"
+                  >Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 lg:mt-20">
+            <div
+              class="flex md:flex-row flex-col items-center justify-between lg:max-w-screen-xl lg:mx-32 lg:mx-32 lg:space-x-5"
+            >
+              <div
+                class="max-w-2xl lg:w-1/2 lg:w-[30rem] lg:h-[30rem] mx-5 mt-10 inline-flex items-center justify-center skew-y-6 rounded-full bg-slate-50 text-slate-200 shadow-sm mb-5 flex-shrink-0"
+              >
+                <svg
+                  class="w-80 h-80"
+                  data-name="Layer 1"
+                  viewBox="0 0 810.13 595.29"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="378.97 471.24 391.77 465.51 375.74 412.21 356.85 420.67"
+                    fill="#ffb6b6"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m564.74 609.12 19.145-13.52 5.2841 8.518 27 1.3286a6.2613 6.2613 0 0 1 2.9934 11.575l-23.669 14.683-9.3066-5.8947 3.6338 9.4138-8.9243 5.5362z"
+                    fill="#2f2e41"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="M902.65793,522.71821c0-5.36-1.8-9.71-4.01-9.72h-602.49c-2.22.01-4.01,4.36-4.02,9.72v220.643a2.00261,2.00261,0,0,1-1.8087,1.99364q-2.42566.23283-4.85127.43337c-.04,0-.08.01-.12006.01-.87994.08-1.75994.14-2.63995.21h-.01q-.679-1.2554-1.34226-2.5327a2.01127,2.01127,0,0,1-.22775-.92907V510.10822c0-1.48.06-2.97.16-4.44a56.88446,56.88446,0,0,1,.75-6.02c1.69-9.29,5.51-15.58,9.85-15.6h611a4.68255,4.68255,0,0,1,1.84.39,7.17335,7.17335,0,0,1,2.27,1.59,14.06971,14.06971,0,0,1,2.23,3.05c2.14,3.77,3.67,9.39,4.21,15.93,0,.06.01.12.01.18.14,1.62.21,3.27.2,4.92l.14,21.43.09,12.78.27,40.1.1,14.24.44,146.2h0a2,2,0,0,1-2,2h-8.04a2,2,0,0,1-2-2Z"
+                    fill="#e6e6e6"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m738.94 383.77h-64.919a3.4638 3.4638 0 0 0-3.4586 3.4675v102.55h71.845v-102.55a3.4657 3.4657 0 0 0-3.4675-3.4675zm-32.241 58.27a7.7019 7.7019 0 0 1-7.6659-7.6659v-11.829a7.6659 7.6659 0 0 1 15.332 0v11.829a7.7017 7.7017 0 0 1-7.6659 7.6659z"
+                    fill="#2f2e41"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m670.34 486.51v9.8944a1.9383 1.9383 0 0 0 1.9343 1.9343h68.422a1.944 1.944 0 0 0 1.9343-1.9343v-9.8944z"
+                    fill="#3f3d56"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m586.93 240.96a13.844 13.844 0 0 1-20.158 6.6573l-91.638 63.839-2.53-25.441 90.102-58.376a13.919 13.919 0 0 1 24.224 13.32z"
+                    fill="#ffb6b6"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m381.76 281.21s-9.9224 14.662 5.6481 27.636 78.681 10.393 88.865 10.282 56.913-48.45 56.913-48.45l-0.30585-27.917-56.418 33.476z"
+                    fill="#6c63ff"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m376.14 378.55 1 19s-2.9516 16.83-0.5241 20.462c2.4092 3.6138 68.568 8.9901 68.568 8.9901s-2.0742-28.336 1.6673-48.833z"
+                    fill="#ffb6b6"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m579.19 572-25.467 22.293-49.913-102.08c-49.496 8.5124-96.19 11.239-136.58 0.94186-13.675-3.4384-22.034-17.558-18.67-31.538q0.2358-0.98017 0.54534-1.9396c4.8338-14.748 17.487-25.183 27.456-41.404l72.817 1.1061-8.1331 28.062 70.736-9.1535c14.225-1.8408 27.217 8.4558 29.018 22.998q0.14259 1.1518 0.18634 2.313z"
+                    fill="#2f2e41"
+                  />
+                  <circle cx="209.64" cy="68.762" r="29.568" fill="#ffb6b6" />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m387.24 261.36 27.111 3.1895a5.5322 5.5322 0 0 1 4.7582 4.3132l4.3115 19.729 26.877 31.651s9.6511 18.096 6.032 38.605a145.27 145.27 0 0 1-11.21 35.748s-66.096 27.032-68.509 23.413-3.1958-20.058-3.1958-20.058l-8.5035-94.602a33.944 33.944 0 0 1 9.7557-27.275c2.1455-2.1103 4.2628-3.5875 5.9862-3.5875 3.893-0.13126 3.3936-8.893 6.5866-11.124z"
+                    fill="#6c63ff"
+                  />
+                  <polygon
+                    points="250.48 510.87 263.06 517.04 293.35 470.36 274.78 461.26"
+                    fill="#ffb6b6"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m475.55 652.68-25.847-9.8129 35.474-106.55c-48.193-14.13-84.546-36.889-116.29-63.905-10.768-9.1036-18.843-20.795-9.6724-31.869q0.64305-0.77657 1.343-1.5019c10.829-11.118 38.312-8.9787 54.4-19.16l35.982 38.416-2.2545 10.291 67.551 22.899c13.585 4.605 20.722 19.567 15.941 33.419q-0.37865 1.0971-0.85021 2.1591z"
+                    fill="#2f2e41"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m444.98 655.79 21.625 9.0385-4.4098 9.0018 13.217 23.581a6.2613 6.2613 0 0 1-8.2163 8.6847l-25.014-12.254 0.05045-11.016-6.0454 8.0795-9.4312-4.6201z"
+                    fill="#2f2e41"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m402.7 492.66a13.844 13.844 0 0 1-2.5338-21.077l-44.429-102.46 25.438 2.5578 39.378 99.877a13.919 13.919 0 0 1-17.853 21.107z"
+                    fill="#ffb6b6"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m403.87 283.58s-12.407-12.629-28.208 0.06381-25.768 75.065-27.675 85.07 36.221 65.38 36.221 65.38l27.425 5.2284-21.641-61.93z"
+                    fill="#6c63ff"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m846.44 223.73h-277.5a9.0084 9.0084 0 0 0-8.9941 8.994v187.26a9.0027 9.0027 0 0 0 8.9941 8.994h277.5a9.0027 9.0027 0 0 0 8.9941-8.994v-187.26a9.0084 9.0084 0 0 0-8.9941-8.994z"
+                    fill="#3f3d56"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m844.13 230.22h-272.87a4.8205 4.8205 0 0 0-4.81 4.82v182.62a4.8183 4.8183 0 0 0 4.81 4.81h272.87a4.8183 4.8183 0 0 0 4.81-4.81v-182.62a4.8205 4.8205 0 0 0-4.81-4.82z"
+                    fill="#fff"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m790.98 501.78h-162.34a2.9864 2.9864 0 0 1-2.9224-3.6016l2.519-11.964a2.9993 2.9993 0 0 1 2.9219-2.3711h157.31a2.9993 2.9993 0 0 1 2.9219 2.3711l2.519 11.964a2.9864 2.9864 0 0 1-2.9224 3.6016z"
+                    fill="#2f2e41"
+                  />
+                  <rect
+                    x="437.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="447.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="457.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="467.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="477.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="487.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="497.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="507.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="517.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="527.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="537.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="547.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="557.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="567.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="577.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="587.37"
+                    y="333.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="437.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="447.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="457.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="467.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="477.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="487.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="497.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="507.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="517.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="527.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="537.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="547.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="557.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="567.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="577.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="587.25"
+                    y="338.65"
+                    width="5"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="485.25"
+                    y="344.65"
+                    width="40"
+                    height="3"
+                    rx=".48819"
+                    fill="#3f3d56"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m825.33 730.02-7.71-12.39-1.54 7.0801c-0.27 1.24-0.54 2.5-0.79 3.75-2.19-1.8701-4.52-3.6001-6.7998-5.26q-10.5-7.6201-20.99-15.26l2.1899 12.7c1.3501 7.8201 2.7602 15.8 6.1001 22.95 0.37011 0.81006 0.77 1.6101 1.2002 2.3901h32.54a10.487 10.487 0 0 0 0.54-2.2401 0.77484 0.77484 0 0 0 0.00976-0.15c0.51031-4.8501-2.1699-9.42-4.75-13.57z"
+                    fill="#f0f0f0"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m385.33 730.02-7.71-12.39-1.54 7.0801c-0.27 1.24-0.54 2.5-0.79 3.75-2.19-1.8701-4.52-3.6001-6.7998-5.26q-10.5-7.6201-20.99-15.26l2.1899 12.7c1.3501 7.8201 2.7602 15.8 6.1001 22.95 0.37011 0.81006 0.77 1.6101 1.2002 2.3901h32.54a10.487 10.487 0 0 0 0.54-2.2401 0.77484 0.77484 0 0 0 0.00976-0.15c0.51031-4.8501-2.1699-9.42-4.75-13.57z"
+                    fill="#f0f0f0"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m1003.9 747.34-275.75 0.30733a1.1907 1.1907 0 0 1 0-2.3814l275.75-0.30733a1.1907 1.1907 0 0 1 0 2.3814z"
+                    fill="#cacaca"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m471.88 747.34-275.75 0.30733a1.1907 1.1907 0 0 1 0-2.3814l275.75-0.30733a1.1907 1.1907 0 0 1 0 2.3814z"
+                    fill="#cacaca"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m373.31 194.76c-4.77 1.42-9.22-2.57-12.54-6.35l1.18 1.4c-7.81 5.5-12.48 14.46-15.51 23.53-3.03 9.06-4.72 18.55-8.14 27.48-3.42 8.92-8.94 17.55-17.39 22-11.32 5.96-25.19 3.25-37.23-1.05-0.16-0.06-0.31-0.11-0.47-0.17a76.722 76.722 0 0 0 8.78-29.4 69.759 69.759 0 0 1-20.86 24.47 160.14 160.14 0 0 1-22.62-12.58c-4.65-3.11-9.55-7.13-10.09-12.7-0.55-5.53 3.58-10.58 8.45-13.24s10.47-3.56 15.79-5.16c5.31-1.59 10.73-4.2 13.52-9 6.43-11.04-4.39-26.61 2.51-37.37 3.4-5.29 10-7.41 16.12-8.88a213.12 213.12 0 0 1 28.38-4.79c8.39-0.84 17.06-1.15 25.04 1.55s15.22 8.97 16.93 17.23c4.66 2.45 9.59 5.16 12.09 9.81 2.5 4.64 1.11 11.72-3.94 13.22z"
+                    fill="#2f2e41"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m366.19 192.9c-4.5676 5.7218-7.0539 11.91-7.0539 15.615-9.4886 17.342 4.0803 32.238 21.423 41.727a35.53 35.53 0 0 0 22.7 3.9575l0.72556-3.0972 0.983 2.7899s11.291 37.293 15.016 39.481c-1.4133-6.6369-3.0322-37.367-3.819-43.844-1.0892-8.8158 2.7078-21.94 5.4468-29.922a47.111 47.111 0 0 0 2.5794-15.289v-0.22752l2.667 8.5665 9.7095-4.1419c-1.8064-10.361 0-22.123-21.656-21.103-11.713-8.0554-22.027-9.2824-30.5-6.9977-1.0934-1.6905-7.3985 1.4757-9.2205 0.5856"
+                    fill="#2f2e41"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m848.94 235.04v182.62a4.8183 4.8183 0 0 1-4.81 4.81h-96.22a118.08 118.08 0 0 1-25.76-34.66q-0.63008-1.26-1.2-2.55a117.03 117.03 0 0 1-10.4-40.03c-0.07-0.85-0.13-1.7-0.17-2.56-0.13-2.2-0.19-4.43-0.19-6.67a117.54 117.54 0 0 1 8.29-43.51c0.33-0.86 0.68-1.71 1.04-2.56a118.4 118.4 0 0 1 56.35-59.71h68.26a4.8205 4.8205 0 0 1 4.81 4.82z"
+                    fill="#6c63ff"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m830.41 255.38h-255.32a1.0156 1.0156 0 0 1 0-2.0307h255.32a1.0156 1.0156 0 0 1 0 2.0307z"
+                    fill="#cacaca"
+                  />
+                  <ellipse
+                    cx="397.53"
+                    cy="89.728"
+                    rx="5.9504"
+                    ry="6.083"
+                    fill="#3f3d56"
+                  />
+                  <ellipse
+                    cx="418.09"
+                    cy="89.728"
+                    rx="5.9504"
+                    ry="6.083"
+                    fill="#3f3d56"
+                  />
+                  <ellipse
+                    cx="438.64"
+                    cy="89.728"
+                    rx="5.9504"
+                    ry="6.083"
+                    fill="#3f3d56"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m818.03 237.51h-14.602a1.1058 1.1058 0 0 0 0 2.2112h14.602a1.1058 1.1058 0 0 0 0-2.2112z"
+                    fill="#3f3d56"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m818.03 241.66h-14.602a1.1058 1.1058 0 0 0 0 2.2112h14.602a1.1058 1.1058 0 0 0 0-2.2112z"
+                    fill="#3f3d56"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m818.03 245.81h-14.602a1.1058 1.1058 0 0 0 0 2.2112h14.602a1.1058 1.1058 0 0 0 0-2.2112z"
+                    fill="#3f3d56"
+                  />
+                  <rect
+                    x="420.19"
+                    y="162.34"
+                    width="40.582"
+                    height="8.678"
+                    rx="4.339"
+                    fill="#6c63ff"
+                  />
+                  <rect
+                    x="399.58"
+                    y="179.7"
+                    width="81.802"
+                    height="8.678"
+                    rx="4.339"
+                    fill="#e6e6e6"
+                  />
+                  <rect
+                    x="399.58"
+                    y="197.06"
+                    width="81.802"
+                    height="8.678"
+                    rx="4.339"
+                    fill="#e6e6e6"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m601.19 412a29.815 29.815 0 0 1-1.88 10.47h-28.05a4.8183 4.8183 0 0 1-4.81-4.81v-35.28a29.628 29.628 0 0 1 4.74-0.38 29.998 29.998 0 0 1 30 30z"
+                    fill="#6c63ff"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m849.19 292.49v-2.56h-42.91v-29.67h-2.55v29.67h-49.18v-29.67h-2.55v29.67h-32.48c-0.36 0.85-0.71 1.7-1.04 2.56h33.52v50.18h-41.62c0.04 0.86 0.1 1.71 0.17 2.56h41.45v40.03h-31.05q0.57 1.29 1.2 2.55h29.85v33.65h2.55v-33.65h49.18v33.65h2.55v-33.65h42.91v-2.55h-42.91v-40.03h42.91v-2.56h-42.91v-50.18zm-45.46 92.77h-49.18v-40.03h49.18zm0-42.59h-49.18v-50.18h49.18z"
+                    opacity=".2"
+                  />
+                  <path
+                    transform="translate(-194.93 -152.36)"
+                    d="m814.64 403.53a2.6723 2.6723 0 0 1-1.9367-4.6317l0.18311-0.728q-0.03617-0.08744-0.07276-0.17474a7.1762 7.1762 0 0 0-13.237 0.04919c-2.165 5.2144-4.9215 10.438-5.6002 15.951a21.23 21.23 0 0 0 0.37268 7.3014 85.115 85.115 0 0 1-7.7426-35.351 82.154 82.154 0 0 1 0.50958-9.1649q0.42216-3.742 1.1713-7.4308a86.101 86.101 0 0 1 17.075-36.492 22.914 22.914 0 0 0 9.5299-9.8874 17.478 17.478 0 0 0 1.5896-4.7764c-0.46392 0.06085-0.93548 0.09887-1.3994 0.12927-0.14453 0.00757-0.29663 0.0152-0.44116 0.02283l-0.05451 0.00244a2.6476 2.6476 0 0 1-2.1744-4.3134q0.30047-0.36978 0.60131-0.7392c0.30426-0.38031 0.61609-0.753 0.92029-1.1332a1.3184 1.3184 0 0 0 0.09888-0.11413c0.34991-0.43353 0.69971-0.85944 1.0496-1.293a7.6559 7.6559 0 0 0-2.5099-2.4262c-3.5062-2.0535-8.3434-0.63128-10.876 2.5403-2.5403 3.1715-3.0194 7.6209-2.1372 11.583a30.682 30.682 0 0 0 4.244 9.4614c-0.19018 0.2434-0.38794 0.47918-0.57806 0.72259a86.658 86.658 0 0 0-9.0449 14.329 36.024 36.024 0 0 0-2.1507-16.733c-2.0586-4.9661-5.9171-9.1486-9.315-13.442-4.0814-5.1568-12.451-2.9062-13.17 3.6308q-0.01044 0.09493-0.02038 0.18981 0.757 0.4271 1.4821 0.90662a3.6248 3.6248 0 0 1-1.4614 6.5964l-0.07392 0.01141a36.067 36.067 0 0 0 0.95069 5.3924 37.134 37.134 0 0 0 18.489 23.273c0.29663 0.1521 0.58569 0.3042 0.88232 0.44873a88.452 88.452 0 0 0-4.7612 22.406 83.894 83.894 0 0 0 0.06085 13.546l-0.02282-0.15973a22.168 22.168 0 0 0-7.5677-12.8c-5.8237-4.784-14.052-6.5457-20.334-10.391a4.1604 4.1604 0 0 0-6.372 4.0474q0.01263 0.084 0.02569 0.1679a24.351 24.351 0 0 1 2.7304 1.3157q0.75705 0.42718 1.4821 0.90662a3.6248 3.6248 0 0 1-1.4614 6.5964l-0.074 0.01135c-0.05322 0.00763-0.09888 0.01526-0.152 0.02289a36.097 36.097 0 0 0 6.6397 10.397 37.167 37.167 0 0 0 26.955 11.827h0.00763a88.426 88.426 0 0 0 5.9401 17.341h21.22c0.07611-0.23578 0.14453-0.47919 0.213-0.715a24.109 24.109 0 0 1-5.8716-0.34979c1.5744-1.9319 3.1487-3.879 4.7231-5.8108a1.3179 1.3179 0 0 0 0.09888-0.11408c0.79858-0.9887 1.6048-1.9698 2.4034-2.9586l4.3e-4 -0.00122a35.315 35.315 0 0 0-1.0348-8.9963zm-24.3-47.801 0.01117-0.01507-0.01117 0.03027zm-4.7003 42.371-0.18256-0.41065c0.00763-0.29663 0.00763-0.59326 0-0.89746 0-0.08374-0.01519-0.16736-0.01519-0.251 0.06842 0.52479 0.12927 1.0496 0.20532 1.5744z"
+                    fill="#2f2e41"
+                  />
+                </svg>
+              </div>
+
+              <div class="mx-5">
+                <div>
+                  <h6 class="mb-2 text-xl font-bold leading-5">
+                    Access for everyone
+                  </h6>
+                  <p class="mb-3 text-sm text-gray-900">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequuntur, corporis?
+                  </p>
+
+                  <div class="mb-4 grid grid-cols-2 md:grid-cols-2 gap-2">
+                    <div class="inline-flex">
+                      <span class="mr-1">
+                        <svg
+                          class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                          stroke="currentColor"
+                          viewBox="0 0 52 52"
+                        >
+                          <polygon
+                            stroke-width="4"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            fill="none"
+                            points="29 13 14 29 25 29 23 39 38 23 27 23"
+                          ></polygon>
+                        </svg>
+                      </span>
+                      Computers
+                    </div>
+
+                    <div class="inline-flex">
+                      <span class="mr-1">
+                        <svg
+                          class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                          stroke="currentColor"
+                          viewBox="0 0 52 52"
+                        >
+                          <polygon
+                            stroke-width="4"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            fill="none"
+                            points="29 13 14 29 25 29 23 39 38 23 27 23"
+                          ></polygon>
+                        </svg>
+                      </span>
+                      Lorem, ipsum.
+                    </div>
+                    <div class="inline-flex">
+                      <span class="mr-1">
+                        <svg
+                          class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                          stroke="currentColor"
+                          viewBox="0 0 52 52"
+                        >
+                          <polygon
+                            stroke-width="4"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            fill="none"
+                            points="29 13 14 29 25 29 23 39 38 23 27 23"
+                          ></polygon>
+                        </svg>
+                      </span>
+                      Lorem, ipsum dolor.
+                    </div>
+                    <div class="inline-flex">
+                      <span class="mr-1">
+                        <svg
+                          class="w-5 h-5 mt-px text-deep-purple-accent-400"
+                          stroke="currentColor"
+                          viewBox="0 0 52 52"
+                        >
+                          <polygon
+                            stroke-width="4"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            fill="none"
+                            points="29 13 14 29 25 29 23 39 38 23 27 23"
+                          ></polygon>
+                        </svg>
+                      </span>
+                      Web tutorial
+                    </div>
+                  </div>
+                  <button
+                    class="bg-purple-800 text-white font-medium text-md rounded-md px-4 py-2 w-28 focus:outline-none hover:bg-purple-900 capitalize"
+                  >
+                    check in
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--recent course-->
+    <section>
+      <div
+        class="container bg-white bg-cover min-h-screen min-w-ful mx-auto py-24"
+      >
+        <div
+          class="max-w-md flex flex-row space-x-28 lg:max-w-screen-xl w-full lg:mx-32"
+        >
+          <div class="mx-5">
+            <h3 class="capitalize text-xl lg:text-2xl font-bold">
+              How recent course
+            </h3>
+            <div class="mt-1">
+              <span
+                class="inline-block w-40 h-1 rounded-full bg-purple-800"
+              ></span>
+              <span
+                class="inline-block w-3 h-1 ml-1 rounded-full bg-purple-800"
+              ></span>
+              <span
+                class="inline-block w-1 h-1 ml-1 rounded-full bg-purple-800"
+              ></span>
+            </div>
+            <p class="max-w-sm text-sm tracking-wide leading-5 lg:leading-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              sint non voluptas eum eveniet rerum! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Nihil, cumque?
+            </p>
+          </div>
+
+          <div class="lg:block hidden self-end">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="bg-purple-500 p-2 rounded-full h-10 w-10 text-white animate-bounce"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
+            </svg>
+          </div>
+        </div>
+        <!--blog post section-->
+        <div
+          class="lg:max-w-screen-xl w-full lg:mx-32 items-center flex flex-col md:flex-row lg:space-x-5"
+        >
+          <!--
+           <a href="#">
+            <div class="p-4">
+              <div
+                class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover rounded-md shadow-md object-center"
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h2
+                    class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                  >
+                    UI/UX Desgin course
+                  </h2>
+
+                  <p class="leading-relaxed mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eaque, sed. Lorem ipsum dolor sit amet.
+                  </p>
+                  <div class="flex justify-between">
+                    <p class="text-purple-800 text-sm italic font-medium">
+                      19hrs 34sec
+                    </p>
+                    <p class="text-purple-800 text-sm italic font-medium">
+                      20 Leeason
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="p-4">
+              <div
+                class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover rounded-md shadow-md object-center"
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  alt="blog"
+                />
+                <div class="p-6">
+                  <h2
+                    class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                  >
+                    UI/UX Desgin course
+                  </h2>
+
+                  <p class="leading-relaxed mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eaque, sed. Lorem ipsum dolor sit amet.
+                  </p>
+                  <div class="flex justify-between">
+                    <p class="text-purple-800 text-sm italic font-medium">
+                      4hrs 4sec
+                    </p>
+                    <p class="text-purple-800 text-sm italic font-medium">
+                      10 Leeason
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="p-4">
+              <div
+                class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+              >
+                <img
+                  class="lg:h-48 md:h-36 w-full object-cover rounded-md shadow-md object-center"
+                  src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  alt="blog"
+                />
+                <div class="p-6 rounded-md">
+                  <h2
+                    class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                  >
+                    Digital Marketing advance
+                  </h2>
+
+                  <p class="leading-relaxed mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eaque, sed. Lorem ipsum dolor sit amet.
+                  </p>
+                  <div class="flex justify-between">
+                    <p class="text-purple-800 text-sm italic font-medium">
+                      9hr 34sec
+                    </p>
+                    <p class="text-purple-800 text-sm italic font-medium">
+                      12 Leeason
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>-->
+
+          <!--swiper slide displaying blog post on course-->
+          <div
+            x-data="{swiper: null}"
+            x-init="swiper = new Swiper($refs.container, {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+  
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
+      },
+    })"
+            class="relative w-full overflow-hidden mx-auto flex flex-row"
+          >
+            <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+              <button
+                @click="swiper.slidePrev()"
+                class="bg-purple-800 text-white -ml-2 lg:-ml-2 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none"
+              >
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="chevron-left w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <div
+              class="swiper-container lg:max-w-screen-xl w-full overflow-hidden"
+              x-ref="container"
+            >
+              <div class="swiper-wrapper">
+                <!-- Slides start here -->
+                <div class="swiper-slide">
+                  <div class="">
+                    <div class="flex-shrink-0">
+                      <div class="swiper-slide">
+                        <a href="#">
+                          <div class="p-4">
+                            <div
+                              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+                            >
+                              <div class="relative group">
+                                <img
+                                  class="lg:h-48 md:h-36 w-full object-cover rounded-md shadow-md object-center"
+                                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                  alt="blog"
+                                />
+                                <div
+                                  class="inline-flex opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex justify-center items-end text-xl bg-purple-800/40 text-white italic font-semibold"
+                                >
+                                  Watch Now
+                                  <button
+                                    class="ml-4 inline-flex focus:outline-none"
+                                  >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      class="h-8 w-8 text-pink-700 hover:text-pink-800/60"
+                                      viewBox="0 0 20 20"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+                                      />
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="p-6">
+                                <h2
+                                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                                >
+                                  UI/UX Desgin course
+                                </h2>
+
+                                <p class="leading-relaxed mb-3">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Eaque, sed. Lorem ipsum
+                                  dolor sit amet.
+                                </p>
+                                <div class="flex justify-between">
+                                  <p
+                                    class="text-purple-800 text-sm italic font-medium"
+                                  >
+                                    19hrs 34sec
+                                  </p>
+                                  <p
+                                    class="text-purple-800 text-sm italic font-medium"
+                                  >
+                                    20 Leeason
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="">
+                    <div class="flex-shrink-0">
+                      <div class="swiper-slide">
+                        <a href="#">
+                          <div class="p-4">
+                            <div
+                              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+                            >
+                              <div class="relative group">
+                                <img
+                                  class="lg:h-48 md:h-36 w-full object-cover rounded-md shadow-md object-center"
+                                  src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                  alt="blog"
+                                />
+                                <div
+                                  class="inline-flex opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex justify-center items-end text-xl bg-purple-800/40 text-white italic font-semibold"
+                                >
+                                  Watch Now
+                                  <button
+                                    class="ml-4 inline-flex focus:outline-none"
+                                  >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      class="h-8 w-8 text-pink-700 hover:text-pink-800/60"
+                                      viewBox="0 0 20 20"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+                                      />
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="p-6 rounded-md">
+                                <h2
+                                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                                >
+                                  Digital Marketing advance
+                                </h2>
+
+                                <p class="leading-relaxed mb-3">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Eaque, sed. Lorem ipsum
+                                  dolor sit amet.
+                                </p>
+                                <div class="flex justify-between">
+                                  <p
+                                    class="text-purple-800 text-sm italic font-medium"
+                                  >
+                                    9hr 34sec
+                                  </p>
+                                  <p
+                                    class="text-purple-800 text-sm italic font-medium"
+                                  >
+                                    12 Leeason
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="">
+                    <div class="">
+                      <div class="swiper-slide">
+                        <a href="#">
+                          <div class="p-4">
+                            <div
+                              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+                            >
+                              <div class="relative group">
+                                <img
+                                  class="lg:h-48 md:h-36 w-full object-cover rounded-md shadow-md object-center"
+                                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                  alt="blog"
+                                />
+                                <div
+                                  class="inline-flex opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex justify-center items-end text-xl bg-purple-800/40 text-white italic font-semibold"
+                                >
+                                  Watch Now
+                                  <button
+                                    class="ml-4 inline-flex focus:outline-none"
+                                  >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      class="h-8 w-8 text-pink-700 hover:text-pink-800/60"
+                                      viewBox="0 0 20 20"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+                                      />
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="p-6">
+                                <h2
+                                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                                >
+                                  UI/UX Desgin course
+                                </h2>
+
+                                <p class="leading-relaxed mb-3">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Eaque, sed. Lorem ipsum
+                                  dolor sit amet.
+                                </p>
+                                <div class="flex justify-between">
+                                  <p
+                                    class="text-purple-800 text-sm italic font-medium"
+                                  >
+                                    4hrs 4sec
+                                  </p>
+                                  <p
+                                    class="text-purple-800 text-sm italic font-medium"
+                                  >
+                                    10 Leeason
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="">
+                    <div class="flex-shrink-0">
+                      <div class="swiper-slide">
+                        <a href="#">
+                          <div class="p-4">
+                            <div
+                              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+                            >
+                              <div class="relative group">
+                                <img
+                                  class="lg:h-48 md:h-36 w-full object-cover rounded-md shadow-md object-center"
+                                  src="https://images.unsplash.com/photo-1573495627361-d9b87960b12d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c29mdHdhcmUlMjBlbmdpbmVlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                  alt="blog"
+                                />
+                                <div
+                                  class="inline-flex opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex justify-center items-end text-xl bg-purple-800/40 text-white italic font-semibold"
+                                >
+                                  Watch Now
+                                  <button
+                                    class="ml-4 inline-flex focus:outline-none"
+                                  >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      class="h-8 w-8 text-pink-700 hover:text-pink-800/60"
+                                      viewBox="0 0 20 20"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+                                      />
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="p-6 rounded-md">
+                                <h2
+                                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                                >
+                                  Software Enginer
+                                </h2>
+
+                                <p class="leading-relaxed mb-3">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Eaque, sed. Lorem ipsum
+                                  dolor sit amet.
+                                </p>
+                                <div class="flex justify-between">
+                                  <p
+                                    class="text-purple-800 text-sm italic font-medium"
+                                  >
+                                    43hr 34sec
+                                  </p>
+                                  <p
+                                    class="text-purple-800 text-sm italic font-medium"
+                                  >
+                                    20 Leeason
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="">
+                    <div class="flex-shrink-0">
+                      <div class="swiper-slide">
+                        <a href="#">
+                          <div class="p-4">
+                            <div
+                              class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+                            >
+                              <div class="relative group">
+                                <img
+                                  class="lg:h-48 md:h-36 w-full object-cover rounded-md shadow-md object-center"
+                                  src="https://images.unsplash.com/photo-1615309662472-4ca77a77a189?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3VkJTIwY29tcHV0aW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                  alt="blog"
+                                />
+                                <div
+                                  class="inline-flex opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex justify-center items-end text-xl bg-purple-800/40 text-white italic font-semibold"
+                                >
+                                  Watch Now
+                                  <button
+                                    class="ml-4 inline-flex focus:outline-none"
+                                  >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      class="h-8 w-8 text-pink-700 hover:text-pink-800/60"
+                                      viewBox="0 0 20 20"
+                                      fill="currentColor"
+                                    >
+                                      <path
+                                        d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+                                      />
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="p-6 rounded-md">
+                                <h2
+                                  class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
+                                >
+                                  Cloud Computing Advance Class
+                                </h2>
+
+                                <p class="leading-relaxed mb-3">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Eaque, sed. Lorem ipsum
+                                  dolor sit amet.
+                                </p>
+                                <div class="flex justify-between">
+                                  <p
+                                    class="text-purple-800 text-sm italic font-medium"
+                                  >
+                                    9hr 34sec
+                                  </p>
+                                  <p
+                                    class="text-purple-800 text-sm italic font-medium"
+                                  >
+                                    12 Leeason
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--slide ends here.... -->
+            <!--swipe slideNext button-->
+            <div class="absolute inset-y-0 right-0 z-10 flex items-center">
+              <button
+                @click="swiper.slideNext()"
+                class="bg-purple-800 text-white -mr-2 lg:-mr-2 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none"
+              >
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="chevron-right w-6 h-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--take a class button-->
+        <div class="flex justify-end max-w-screen-xl mt-4">
+          <button
+            class="bg-purple-800 hover:bg-purple-900 text-white w-32 px-2 py-2 rounded-lg focus:outline-none transform"
+          >
+            Take a Class
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--testimony section -->
+    <section>
+      <div class="container bg-white bg-cover min-h-full min-w-ful mx-auto">
+        <div class="flex lg:justify-between lg:max-w-screen-xl lg:mx-32">
+          <h1 class="text-3xl font-medium mx-5 text-gray-900 mb-12">
+            What our<br class="block lg:hidden" />
+            client is saying
+          </h1>
+          <button
+            class="bg-purple-800 hover:bg-purple-900 text-white h-10 w-32 px-2 py-2 border-transparent rounded-lg focus:outline-none self-end"
+          >
+            Veiw More
+          </button>
+        </div>
+        <div
+          class="flex md:flex-row flex-col lg:space-x-6 lg:max-w-screen-xl lg:mx-32"
+        >
+          <div class="p-4 md:w-1/2 max-w-md">
+            <div class="bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="block w-5 h-5 text-gray-400 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                modi ducimus animi voluptas doloribus ipsa. Error porro adipisci
+                nihil veritatis.
+              </p>
+              <div class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="https://images.unsplash.com/photo-1613323593608-abc90fec84ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aW1hZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Holden Caulfield</span
+                  >
+                  <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 max-w-md">
+            <div class="bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="block w-5 h-5 text-gray-400 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                modi ducimus animi voluptas doloribus ipsa. Error porro adipisci
+                nihil veritatis.
+              </p>
+              <div class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="https://images.unsplash.com/photo-1613323593608-abc90fec84ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aW1hZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Micheal Son</span
+                  >
+                  <span class="text-gray-500 text-sm">Digital Marketer</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 md:w-1/2 lg:max-w-md">
+            <div class="h-full bg-gray-100 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="block w-5 h-5 text-gray-400 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+                voluptatibus dolores id repellat laborum quos dignissimos ea
+                officiis fuga ab.
+              </p>
+              <div class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="https://images.unsplash.com/photo-1611417361507-7d77bbc20a73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW1hZ2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-gray-900"
+                    >Alper Kamu</span
+                  >
+                  <span class="text-gray-500 text-sm">DESIGNER</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--subscrible scetion-->
+    <section>
+      <div class="bg-slate-50 bg-cover min-h-full min-w-full mx-auto mt-16">
+        <div class="lg:max-w-screen-full lg:mx-40">
+          <div
+            class="relative bg-purple-800/50 lg:max-w-screen-xl lg:mx-32 mx-5 mt-10"
+          >
+            <div class="absolute inset-x-0 bottom-0">
+              <svg
+                viewBox="0 0 224 12"
+                fill="currentColor"
+                class="w-full -mb-1 text-slate-50"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="px-4 py-16 mx-auto lg:px-4 lg:py-10">
+              <div
+                class="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center"
+              >
+                <h2
+                  class="mb-6 text-xl font-bold tracking-tight text-white sm:text-2xl sm:leading-none"
+                >
+                  Subcrible to our newsletter
+                </h2>
+                <p class="mb-6 text-base text-gray-100 md:text-lg">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae. explicabo. Sed ut perspiciatis unde omnis.
+                </p>
+                <form
+                  class="flex flex-col items-center w-full mb-4 md:flex-row md:px-16"
+                >
+                  <input
+                    placeholder="Email"
+                    required="required"
+                    type="text"
+                    class="flex-grow w-full h-12 px-4 mb-3 text-white transition duration-200 border-2 border-transparent rounded appearance-none md:mr-2 md:mb-0 bg-slate-500 focus:border-gray-700 focus:outline-none"
+                  />
+                  <button
+                    class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide transition duration-200 rounded md:w-auto text-white bg-gray-900 hover:bg-gray-800 focus:outline-none"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer section-->
+    <footer class="bg-purple-800 bg-cover mx-auto mt-10">
+      <div class="lg:max-w-screen-xl lg:mx-32">
+        <div
+          class="container flex md:flex-row flex-col lg:max-w-screen-xl lg:mx-32 py-24"
+        >
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto">
+            <a
+              class="flex font-medium items-center md:justify-start text-gray-900"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-10 h-10 text-white p-2 bg-slate-500 rounded-full"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                ></path>
+              </svg>
+              <span class="ml-3 text-xl">Learn.com</span>
+            </a>
+            <p class="mt-2 text-sm text-gray-100">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              quibusdam.
+            </p>
+          </div>
+          <div
+            class="flex-grow flex justify-between md:pl-20 -mb-10 md:mt-0 mt-10 mx-5"
+          >
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2
+                class="font-bold text-white tracking-widest text-sm mb-3 uppercase"
+              >
+                Programs
+              </h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >Courses</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >Web Job</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >My account</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >Tutor</a
+                  >
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2
+                class="font-bold text-white tracking-widest text-sm mb-3 uppercase"
+              >
+                About us
+              </h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >Courses</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >Web Job</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >My account</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >Tutor</a
+                  >
+                </li>
+              </nav>
+            </div>
+
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2
+                class="font-bold text-white tracking-widest text-sm mb-3 uppercase"
+              >
+                Resource
+              </h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >Courses</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >Web Job</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >My account</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-bold text-slate-200 hover:text-slate-300"
+                    >Tutor</a
+                  >
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--script link -->
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/alpine.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </body>
+</html>
